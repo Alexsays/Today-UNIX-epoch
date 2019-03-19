@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DDFB0722214113F0078B276 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFB0712214113F0078B276 /* AppDelegate.swift */; };
+		4DDFB074221411450078B276 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFB073221411450078B276 /* Assets.xcassets */; };
+		4DDFB077221411460078B276 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFB075221411460078B276 /* MainMenu.xib */; };
+		4DDFB086221411640078B276 /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDFB085221411640078B276 /* NotificationCenter.framework */; };
+		4DDFB089221411640078B276 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DDFB088221411640078B276 /* TodayViewController.swift */; };
+		4DDFB08C221411640078B276 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFB08A221411640078B276 /* TodayViewController.xib */; };
+		4DDFB090221411640078B276 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DDFB08E221411640078B276 /* InfoPlist.strings */; };
+		4DDFB094221411640078B276 /* UNIX Epoch Widget.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4DDFB083221411640078B276 /* UNIX Epoch Widget.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DDFB092221411640078B276 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DDFB0662214113F0078B276 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DDFB082221411640078B276;
+			remoteInfo = "UNIX Epoch Widget";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4DDFB098221411640078B276 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4DDFB094221411640078B276 /* UNIX Epoch Widget.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		4DDFB06E2214113F0078B276 /* UNIX Epoch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UNIX Epoch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFB0712214113F0078B276 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4DDFB073221411450078B276 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4DDFB076221411460078B276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		4DDFB078221411460078B276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDFB079221411460078B276 /* UNIX_Epoch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UNIX_Epoch.entitlements; sourceTree = "<group>"; };
+		4DDFB083221411640078B276 /* UNIX Epoch Widget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "UNIX Epoch Widget.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DDFB085221411640078B276 /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		4DDFB088221411640078B276 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		4DDFB08B221411640078B276 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/TodayViewController.xib; sourceTree = "<group>"; };
+		4DDFB08D221411640078B276 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DDFB08F221411640078B276 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DDFB091221411640078B276 /* UNIX_Epoch_Widget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UNIX_Epoch_Widget.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DDFB06B2214113F0078B276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFB080221411640078B276 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFB086221411640078B276 /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DDFB0652214113F0078B276 = {
+			isa = PBXGroup;
+			children = (
+				4DDFB0702214113F0078B276 /* UNIX Epoch */,
+				4DDFB087221411640078B276 /* UNIX Epoch Widget */,
+				4DDFB084221411640078B276 /* Frameworks */,
+				4DDFB06F2214113F0078B276 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DDFB06F2214113F0078B276 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFB06E2214113F0078B276 /* UNIX Epoch.app */,
+				4DDFB083221411640078B276 /* UNIX Epoch Widget.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DDFB0702214113F0078B276 /* UNIX Epoch */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFB0712214113F0078B276 /* AppDelegate.swift */,
+				4DDFB073221411450078B276 /* Assets.xcassets */,
+				4DDFB075221411460078B276 /* MainMenu.xib */,
+				4DDFB078221411460078B276 /* Info.plist */,
+				4DDFB079221411460078B276 /* UNIX_Epoch.entitlements */,
+			);
+			path = "UNIX Epoch";
+			sourceTree = "<group>";
+		};
+		4DDFB084221411640078B276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFB085221411640078B276 /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DDFB087221411640078B276 /* UNIX Epoch Widget */ = {
+			isa = PBXGroup;
+			children = (
+				4DDFB088221411640078B276 /* TodayViewController.swift */,
+				4DDFB08A221411640078B276 /* TodayViewController.xib */,
+				4DDFB08D221411640078B276 /* Info.plist */,
+				4DDFB08E221411640078B276 /* InfoPlist.strings */,
+				4DDFB091221411640078B276 /* UNIX_Epoch_Widget.entitlements */,
+			);
+			path = "UNIX Epoch Widget";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DDFB06D2214113F0078B276 /* UNIX Epoch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFB07C221411460078B276 /* Build configuration list for PBXNativeTarget "UNIX Epoch" */;
+			buildPhases = (
+				4DDFB06A2214113F0078B276 /* Sources */,
+				4DDFB06B2214113F0078B276 /* Frameworks */,
+				4DDFB06C2214113F0078B276 /* Resources */,
+				4DDFB098221411640078B276 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DDFB093221411640078B276 /* PBXTargetDependency */,
+			);
+			name = "UNIX Epoch";
+			productName = "UNIX Epoch";
+			productReference = 4DDFB06E2214113F0078B276 /* UNIX Epoch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4DDFB082221411640078B276 /* UNIX Epoch Widget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DDFB095221411640078B276 /* Build configuration list for PBXNativeTarget "UNIX Epoch Widget" */;
+			buildPhases = (
+				4DDFB07F221411640078B276 /* Sources */,
+				4DDFB080221411640078B276 /* Frameworks */,
+				4DDFB081221411640078B276 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UNIX Epoch Widget";
+			productName = "UNIX Epoch Widget";
+			productReference = 4DDFB083221411640078B276 /* UNIX Epoch Widget.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DDFB0662214113F0078B276 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Alexsays;
+				TargetAttributes = {
+					4DDFB06D2214113F0078B276 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					4DDFB082221411640078B276 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 4DDFB0692214113F0078B276 /* Build configuration list for PBXProject "UNIX Epoch" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4DDFB0652214113F0078B276;
+			productRefGroup = 4DDFB06F2214113F0078B276 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DDFB06D2214113F0078B276 /* UNIX Epoch */,
+				4DDFB082221411640078B276 /* UNIX Epoch Widget */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DDFB06C2214113F0078B276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFB074221411450078B276 /* Assets.xcassets in Resources */,
+				4DDFB077221411460078B276 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFB081221411640078B276 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFB08C221411640078B276 /* TodayViewController.xib in Resources */,
+				4DDFB090221411640078B276 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DDFB06A2214113F0078B276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFB0722214113F0078B276 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DDFB07F221411640078B276 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DDFB089221411640078B276 /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DDFB093221411640078B276 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DDFB082221411640078B276 /* UNIX Epoch Widget */;
+			targetProxy = 4DDFB092221411640078B276 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4DDFB075221411460078B276 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDFB076221411460078B276 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		4DDFB08A221411640078B276 /* TodayViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDFB08B221411640078B276 /* Base */,
+			);
+			name = TodayViewController.xib;
+			sourceTree = "<group>";
+		};
+		4DDFB08E221411640078B276 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DDFB08F221411640078B276 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DDFB07A221411460078B276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4DDFB07B221411460078B276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		4DDFB07D221411460078B276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UNIX Epoch/UNIX_Epoch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "UNIX Epoch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "info.alexsays.UNIX-Epoch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4DDFB07E221411460078B276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "UNIX Epoch/UNIX_Epoch.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "UNIX Epoch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "info.alexsays.UNIX-Epoch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		4DDFB096221411640078B276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "UNIX Epoch Widget/UNIX_Epoch_Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "UNIX Epoch Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "info.alexsays.UNIX-Epoch.UNIX-Epoch-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		4DDFB097221411640078B276 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "UNIX Epoch Widget/UNIX_Epoch_Widget.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "UNIX Epoch Widget/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "info.alexsays.UNIX-Epoch.UNIX-Epoch-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DDFB0692214113F0078B276 /* Build configuration list for PBXProject "UNIX Epoch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFB07A221411460078B276 /* Debug */,
+				4DDFB07B221411460078B276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFB07C221411460078B276 /* Build configuration list for PBXNativeTarget "UNIX Epoch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFB07D221411460078B276 /* Debug */,
+				4DDFB07E221411460078B276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DDFB095221411640078B276 /* Build configuration list for PBXNativeTarget "UNIX Epoch Widget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DDFB096221411640078B276 /* Debug */,
+				4DDFB097221411640078B276 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DDFB0662214113F0078B276 /* Project object */;
+}

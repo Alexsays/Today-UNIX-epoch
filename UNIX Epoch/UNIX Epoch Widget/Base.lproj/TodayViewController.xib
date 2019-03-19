@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14460.31"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="TodayViewController" customModule="UNIX_Epoch_Widget" customModuleProvider="target">
+            <connections>
+                <outlet property="copyButton" destination="ztL-lB-5Kk" id="EQD-ma-h0f"/>
+                <outlet property="datePicker" destination="E8Q-Br-kPi" id="Jjr-kL-Yub"/>
+                <outlet property="msCheck" destination="F0X-uI-uTE" id="GzV-PN-Gnc"/>
+                <outlet property="timeLabel" destination="RK7-2X-Mtk" id="W5l-tG-qSe"/>
+                <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customView simulatedAppContext="notificationCenter" translatesAutoresizingMaskIntoConstraints="NO" id="Hz6-mo-xeY">
+            <rect key="frame" x="0.0" y="0.0" width="276" height="222"/>
+            <subviews>
+                <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="E8Q-Br-kPi">
+                    <rect key="frame" x="0.0" y="74" width="277" height="148"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="148" id="NeI-Yq-sM8"/>
+                    </constraints>
+                    <datePickerCell key="cell" borderStyle="bezel" alignment="left" datePickerStyle="clockAndCalendar" id="TUR-hf-HC1">
+                        <font key="font" metaFont="system"/>
+                        <date key="date" timeIntervalSinceReferenceDate="-595929600">
+                            <!--1982-02-12 16:00:00 +0000-->
+                        </date>
+                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES"/>
+                    </datePickerCell>
+                    <connections>
+                        <action selector="dateSelected:" target="-2" id="suq-4I-xnx"/>
+                    </connections>
+                </datePicker>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="SiF-79-u0x">
+                    <rect key="frame" x="18" y="51" width="70" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="66" id="4eA-rd-b5y"/>
+                    </constraints>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="UNIX epoch:" id="fc2-eT-CKR">
+                        <font key="font" metaFont="smallSystem"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="RK7-2X-Mtk">
+                    <rect key="frame" x="92" y="49" width="124" height="17"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" id="W8Y-6u-fGC">
+                        <font key="font" metaFont="systemBold"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="secondaryLabelColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ztL-lB-5Kk">
+                    <rect key="frame" x="14" y="13" width="248" height="32"/>
+                    <buttonCell key="cell" type="push" title="Copy timestamp" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GR9-wd-xJI">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="copyClicked:" target="-2" id="8QG-EQ-sFa"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="F0X-uI-uTE">
+                    <rect key="frame" x="220" y="49" width="38" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="Nw0-u2-hAS"/>
+                    </constraints>
+                    <buttonCell key="cell" type="check" title="ms" bezelStyle="regularSquare" imagePosition="left" inset="2" id="1DJ-7H-pPd">
+                        <behavior key="behavior" pushIn="YES" changeContents="YES" lightByContents="YES"/>
+                        <font key="font" metaFont="system" size="11"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="checkClicked:" target="-2" id="e2k-ns-o2c"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="RK7-2X-Mtk" firstAttribute="top" secondItem="E8Q-Br-kPi" secondAttribute="bottom" constant="8" id="4Td-Ok-ZoH"/>
+                <constraint firstItem="F0X-uI-uTE" firstAttribute="leading" secondItem="RK7-2X-Mtk" secondAttribute="trailing" constant="8" id="7t2-P0-hLH"/>
+                <constraint firstItem="ztL-lB-5Kk" firstAttribute="top" secondItem="RK7-2X-Mtk" secondAttribute="bottom" constant="8" id="9lR-CW-qOD"/>
+                <constraint firstAttribute="trailing" secondItem="ztL-lB-5Kk" secondAttribute="trailing" constant="20" id="AsX-VQ-zCP"/>
+                <constraint firstItem="SiF-79-u0x" firstAttribute="centerY" secondItem="RK7-2X-Mtk" secondAttribute="centerY" id="ETP-ge-Z0R"/>
+                <constraint firstAttribute="trailing" secondItem="F0X-uI-uTE" secondAttribute="trailing" constant="20" id="JKF-2Y-qfK"/>
+                <constraint firstItem="SiF-79-u0x" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="Ojy-8J-fyd"/>
+                <constraint firstAttribute="bottom" secondItem="ztL-lB-5Kk" secondAttribute="bottom" constant="20" id="PBd-Cu-Eyb"/>
+                <constraint firstAttribute="trailing" secondItem="E8Q-Br-kPi" secondAttribute="trailing" id="XbO-Bb-yTy"/>
+                <constraint firstItem="E8Q-Br-kPi" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="dBA-Ut-Jbn"/>
+                <constraint firstItem="F0X-uI-uTE" firstAttribute="centerY" secondItem="RK7-2X-Mtk" secondAttribute="centerY" id="gVL-Ki-irU"/>
+                <constraint firstItem="RK7-2X-Mtk" firstAttribute="leading" secondItem="SiF-79-u0x" secondAttribute="trailing" constant="8" id="poG-Xb-9TR"/>
+                <constraint firstItem="E8Q-Br-kPi" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="qrO-sA-1Gw"/>
+                <constraint firstItem="ztL-lB-5Kk" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="sSl-ih-QiS"/>
+            </constraints>
+            <point key="canvasLocation" x="117" y="238"/>
+        </customView>
+    </objects>
+</document>
